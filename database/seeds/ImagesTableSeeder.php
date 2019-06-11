@@ -22,6 +22,7 @@ class ImagesTableSeeder extends Seeder
                 'category_id' => 1,
                 'user_id' => 1,
                 'typecamera_id' => 1,
+                'typeobjectif_id' => 2,
                 'name' => '3sj1TeoL6HL09nPktQulHnhcwUXgvpwJmzRMf51v.jpeg',
                 'description' => NULL,
                 'created_at' => '2017-11-02 17:23:59',

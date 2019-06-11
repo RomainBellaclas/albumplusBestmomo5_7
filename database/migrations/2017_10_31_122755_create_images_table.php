@@ -18,6 +18,7 @@ class CreateImagesTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->integer('user_id')->unsigned();
             $table->integer('typecamera_id')->unsigned();
+            $table->integer('typeobjectif_id')->unsigned();
             $table->string('name');
             $table->string('description')->nullable();
             $table->boolean('adult')->default(false);
@@ -25,6 +26,7 @@ class CreateImagesTable extends Migration
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('typecamera_id')->references('id')->on('typecamera')->onDelete('cascade');
+            $table->foreign('typeobjectif_id')->references('id')->on('typeobjectif')->onDelete('cascade');
             $table->timestamps();
         });
     }

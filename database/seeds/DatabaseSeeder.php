@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
         $this->call(CategoriesTableSeeder::class);
         $this->call(TypeCameraTableSeeder::class);
+        $this->call(TypeObjectifTableSeeder::class);
         $this->call(ImagesTableSeeder::class);
         $this->call(AlbumsTableSeeder::class);
         $this->call(AlbumImageTableSeeder::class);
